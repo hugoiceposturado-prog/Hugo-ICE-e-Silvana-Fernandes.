@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#5c2146">
+<title>Hugo ICE & Silvana Fernandes — Nossa conversa</title>
+<style>
+:root{--bg:#eadfd7;--paper:#fffaf5;--wine:#59213f;--pink:#f4c0cf;--text:#292328;--muted:#81777b;--silvana:#fff;--hugo:#f8d5e0;--line:#eee3dd}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(150deg,#f9e7ed,#eadfd7 45%,#e7d4cf);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);min-height:100vh;padding:20px 12px}.app{max-width:760px;margin:0 auto;background:var(--paper);min-height:calc(100vh - 40px);border-radius:24px;overflow:hidden;box-shadow:0 20px 70px #4a183022;display:flex;flex-direction:column}.top{background:var(--wine);color:white;padding:20px 22px 17px;position:sticky;top:0;z-index:2;box-shadow:0 4px 18px #30102726}.row{display:flex;align-items:center;gap:13px}.avatar{width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#f2bdce,#fff0e9);color:var(--wine);font-weight:800;font-size:1.2rem;flex:none}.top h1{font:600 1.04rem system-ui;margin:0}.sub{font-size:.78rem;color:#eed8e2;margin-top:3px}.pin{margin:14px 0 0;padding:10px 13px;border:1px solid #ffffff30;background:#ffffff12;border-radius:13px;color:#fff0f3;font:italic .93rem Georgia,serif}.pin b{color:#ffd3df}.toolbar{display:flex;gap:8px;margin-top:12px}.tool{color:white;border:1px solid #ffffff4d;background:transparent;border-radius:999px;padding:7px 12px;font-size:.79rem;cursor:pointer}.tool:hover{background:#ffffff19}.chat{padding:20px 14px 26px;flex:1;background-color:#f5eee8;background-image:radial-gradient(#d7c4bc 0.7px,transparent .7px);background-size:18px 18px}.label{text-align:center;color:#76666c;font-size:.76rem;margin:2px auto 18px;background:#fff9;padding:7px 12px;border-radius:20px;width:max-content;max-width:100%;box-shadow:0 2px 8px #5a29300a}.msg{display:flex;align-items:flex-end;gap:7px;margin:10px 0;max-width:92%;animation:in .24s ease-out}@keyframes in{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:none}}.msg.silvana{margin-right:auto}.msg.hugo{margin-left:auto;flex-direction:row-reverse}.mini{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;font-size:.68rem;font-weight:800;color:#642c4b;background:#f5c9d6;flex:none}.bubble{position:relative;border-radius:17px;padding:10px 13px 8px;box-shadow:0 2px 5px #4825370d;white-space:pre-wrap;overflow-wrap:anywhere;font-size:.93rem;line-height:1.52}.silvana .bubble{background:var(--silvana);border-bottom-left-radius:5px}.hugo .bubble{background:var(--hugo);border-bottom-right-radius:5px}.sender{font-size:.7rem;color:#7c5570;font-weight:750;margin-bottom:3px}.bubble p{margin:0}.heart{color:#b54b70}.end{text-align:center;color:#896b79;font-size:.8rem;padding:12px 8px 30px}.notice{max-width:580px;margin:10px auto 22px;text-align:center;font-size:.9rem;line-height:1.6;color:#67485a}.highlight{color:#8e315b;font-weight:700}.hidden{display:none!important}
+@media(max-width:520px){body{padding:0;background:var(--paper)}.app{min-height:100vh;border-radius:0}.top{padding:16px 14px}.chat{padding:17px 9px}.msg{max-width:96%}.bubble{font-size:.9rem}.notice{padding:0 12px}}
+</style></head>
+<body><main class="app">
+<header class="top"><div class="row"><div class="avatar">H♥S</div><div><h1>Hugo ICE & Silvana Fernandes</h1><div class="sub">Uma conversa guardada com carinho</div></div></div><div class="pin">“Tu és a minha <b>propriedade valiosa</b> e estarás sempre na mente e no coração do posturado.” 💎🤍</div><div class="toolbar"><button class="tool" id="copy">Copiar conversa</button><button class="tool" id="scroll">Ir ao fim ↓</button></div></header>
+<section class="chat" id="chat" aria-label="Conversa entre Hugo ICE e Silvana Fernandes"><div class="label">Uma conversa especial · Hugo ICE e Silvana Fernandes</div><div class="notice">Uma troca de carinho, planos e promessas — para lembrar à Silvana o quanto ela é uma <span class="highlight">propriedade valiosa</span>. 💎🤍</div><div id="messages"></div><div class="end">Fim da conversa · Com amor e carinho, Silvana & Propriedade valiosa... 💎🤍</div></section>
+</main>
+<script>
+const messages=[
+['Silvana Fernandes','Bom dia, meu querido!\nLembre - se que vc é capaz de realizar coisas incríveis. Tbm que hoje vc poças encontrar o amor e beleza em todas as coisas... Além de seres o amor mas sincero que já tive, tu tbm significa paz para mim 💗\n\nHoje quero ser o seu primeiro pensamento do dia , estou torcendo por você 🫶\n\nCom amor e carinho Silvana 🥰 🎂🎂🎈'],
+['Hugo ICE','Fico muito feliz por seres Exatamente o primeiro pensamento do meu dia, porque tua SMS ficou no topo do meu WhatsApp e hoje VC Acertou na SMS e tuas palavras invadiram meu coração 😉🤍'],
+['Hugo ICE','tenho a plena certeza que vou me lembrar sempre e sou muito grato em ter vc no meu Chat e no meu coração...😌🤍'],
+['Hugo ICE','No final seria: Com Amor e carinho Silvana & Propriedade valiosa...💎🤍'],
+['Silvana Fernandes','Está bem! Depois vou responder de um jeito melhor, agora preciso me concentrar numa missão.'],
+['Hugo ICE','Está fix coração relaxa o final era só para descontrair, Está perfeito não precisa alterar nada porque eu sei que foi VC mesma  na SMS e isso sim Toca meu emocional e significa muito para min🫰'],
+['Silvana Fernandes','Entendido.'],
+['Silvana Fernandes','Se eu pudesse roubar uma hora do seu dia hoje, o que faríamos?'],
+['Hugo ICE','Uma hora são só 50 e tal minutos, não dá pra fazer muita coisa, mas dava pra criar conexão. Ouvir música, ver um filme da Netflix no meu PC, encomendar algo pra comer - não pode faltar doces não pode...e pipoca, e no  final conversar e ver as estrelas.\n\nSe for algo mais clássico, preparo algo só pra nós. Não gosto bar e festas porque n, sou mais de praia, mas como aqui no Huambo não temos esse privilégio, farei a questão de alugar uma piscina só pra nós dois numa sexta ou domingo 😌'],
+['Silvana Fernandes','Fiquei sem palavras 🤭🫢'],
+['Hugo ICE','isso só com 50 e tal minutos (01 hora ).😅\n\nMás e tu oque farias se roubasses uma hora do meu dia?'],
+['Silvana Fernandes','Para ser sincera não sei! Mas penso que : tudo que me vir em mente...'],
+['Hugo ICE','Está fx, desde que tenha cabritel está tudo bem 👌\n\ne tu oque não pode faltar pra gente saborear nessa hora roubada e ser bem aproveitada?'],
+['Silvana Fernandes','Acreditas que tbm não sei 🙈'],
+['Hugo ICE','Será?😌'],
+['Silvana Fernandes','É sério!'],
+['Hugo ICE','Está fx, só me resta acreditar'],
+['Silvana Fernandes','Assim está bom! \nAinda é cedo para dormir?'],
+['Hugo ICE','Yea, ouve Algumas alterações na minha rotina por intermédio dos estudos então está suave'],
+['Silvana Fernandes','Ok !'],
+['Silvana Fernandes','Hoje parece que não tem estrelas no seu !'],
+['Hugo ICE','Que maravilha ! também tens observado as estrelas?😅'],
+['Silvana Fernandes','Estou na janela do quarto, olhei para o céu e lembrei que me tinhas dito sobre observar estrelas e percebi que não há . Não tenho observado, mas lembrei de vc .'],
+['Hugo ICE','Parece meio engraçado, más quando você Usufruir desta Obra de Arte de forma correta acredito que irás notar que é Algo incrível, só tem de ser corretamente...\n\n😌👌'],
+['Silvana Fernandes','Então podes me ensinar, para que eu poça usufruir de forma correta?'],
+['Hugo ICE','Palavras não será suficiente coração, mas creio eu que um dia desses agente poderá usufruir desta terapia corretamente e  aí sim, vou explicar Os segredos mais importantes de forma prática...\nSerá um momento como se fosse meditação guiada!🫰'],
+['Silvana Fernandes','Hugo !'],
+['Hugo ICE','Eis-me aqui, madame!🫰'],
+['Silvana Fernandes','Qual pequeno gesto consegui conquistar seu coração?'],
+['Hugo ICE','Eu creio que tu sabes e se eu contar assim já não terá impacto...'],
+['Silvana Fernandes','Mas eu ainda acho que: cá entre nós, o mais tímido é VC .'],
+['Hugo ICE','Será?😅'],
+['Hugo ICE','Está bem!\n\nQuas São os géneros de filmes que gostas de assistir?'],
+['Silvana Fernandes','Normalmente não gosto de filmes ! Mas assisto se encontrar alguém assistir, se eu  gostar continuo e não me retiro .'],
+['Hugo ICE','Está bem,  eu tenho Os melhores filmes da Netflix No meu HD quando ouver Oportunidade irei mostrar pra VC...'],
+['Silvana Fernandes','Estarei esperando para esse dia.'],
+['Hugo ICE','Nesta noite tão especial, eu poderia te dizer várias cantadas poemas e muito mais más vou começar por dizer: Como não posso estar com você esta noite, pedi à lua que cuide de você. Durma sem preocupações e lembre se sempre que tu és a própriedade valiosa e serás sempre pra mim e quero que saibas que estarás sempre na mente e no coração do posturado 🫡. Boa noite, coração!🤍'],
+['Silvana Fernandes','Boa noite sim querido ! Com um sorriso  lindo e sincero que essa sms me fez dar , terei sim uma ótima noite. Só não sei vc prq o feliz noite de hoje é só mesmo para mim .\n\nNenhum poema e contadas não ditas irá fazer com que a minha noite não seja ótima, até porque sou a tua prioridade valiosa e pediste a lua para me cuidar e amar por vc... Muito obrigado e feliz noite para vc tbm ❤️'],
+['Hugo ICE','Bjs...\n\nO último a sair desliga o Chat, dei ......🏃🌹'],
+['Silvana Fernandes','Que bom ler isso logo pela manhã 🙂 energia boa contagia mesmo .\n\nQue continue assim teu dia tbm, bem motivado e espalhando bom humor , já começamos bem por aqui.\n\nVamos ver se termina melhor mesmo .'],
+['Hugo ICE','Bom dia sim! Sabes aquele tipo de dia que começa bem e vai terminar ainda melhor se Deus permitir.'],
+['Silvana Fernandes','Me fizeste rir acreditas ? \n\nSabes por isso amo vc , além de paz vc me transmite um sensação que só consigo sentir e nem sei como dizer 💛'],
+['Hugo ICE','Que bom, neste caso estou ao teu dispor qualquer sinal terei o prazer e a ousadia de desligar meu chat até se possível chotaria todo mundo do WatsApp pará estar só nós dois, mais infelizmente isso depende também do senhor Mark zurk berg😌'],
+['Silvana Fernandes','Não duvido 😌\n\nVamos fazer uma promessa um ao outro , o quê achas?'],
+['Hugo ICE','O ano passado tive o privilégio de criar meu primeiro sistema de segurança más esse ano farei a questão de  \nEstudar outras línguagem de programação pará eu criar uma rede social simplesmente para nós dois, só nos dois...😅👌\n\nNuma boa, pode começar!😌'],
+['Silvana Fernandes','UAU, e isso é possível mesmo? VC criar uma rede só para nós??? \n\nNão importa , quanto tempo a gente vai ficar sem se falar ou se ver , não sei por onde a gente vai andar para concretizar os nossos sonhos, mas quero que prometas que apesar dos apesar, a gente vai acabar juntos 🫶🫂💍.\n\nEu prometo 💕e vc?'],
+['Hugo ICE','Sim é possível, o ano passado na nossa apresentação, um dos meus colegas criou um Sistema bancário que funciona como ATM, eu por exemplo criei um programa de proteção, que permite guardar qualquer coisa com segurança super avançada tem umas 5 ou 7 senhas, está no meu Computador, qualquer dia desses posso mostrar pra VC, más redes sociais como funciona online sera muito difícil más é possível desenvolver!\nTambém tens a minha palavra coração 🤍💍🫰'],
+['Silvana Fernandes','Ainda assim não acredito , mas isso não importa . Então vou esperar esse dia para vc mostrar , quanto tempo pode levar para criar uma rede?\nEntão temos algo que vai nos unir sempre... Agora só falta a gente usar algo que vai servir como símbolo dessa união. VC vai comprar um acessório para mim e eu para vc , para que nos lembremos sempre um do outro.'],
+['Hugo ICE','Está bem meu PC está com um problema básico más tenho a certeza que daqui a alguns dias já estará comigo vou tentar desenvolver e quando eu fazer a apresentação aos meus colegas irei dizer que: esse aplicativo foi criado exclusivamente para uma garota muito especial e tive o privilégio de criar esse apk pensando nela...😌\nEstou dentro..🫰'],
+['Silvana Fernandes','Então essa garota deve se sentir muito especial...  Acho que tem um papel muito importante na sua vida 🥹 estou muito ansiosa e emocionada ‼️'],
+['Hugo ICE','Más podes crer, se a ferramenta que eu utilizo não tiver essa capacidade irei criar algo parecido más que seja para nós dois..🫰'],
+['Silvana Fernandes','Está bem, confio plenamente em ti , só não entendo nada de informática se não íamos trabalhar juntos, para a nossa criança.']
+];
+const root=document.getElementById('messages');
+for(const [name,text] of messages){const isHugo=name==='Hugo ICE';const item=document.createElement('article');item.className='msg '+(isHugo?'hugo':'silvana');const avatar=document.createElement('span');avatar.className='mini';avatar.textContent=isHugo?'H':'S';avatar.setAttribute('aria-hidden','true');const bubble=document.createElement('div');bubble.className='bubble';const sender=document.createElement('div');sender.className='sender';sender.textContent=name;const content=document.createElement('p');content.textContent=text;bubble.append(sender,content);item.append(avatar,bubble);root.append(item)}
+document.getElementById('scroll').onclick=()=>document.getElementById('chat').scrollTo({top:document.getElementById('chat').scrollHeight,behavior:'smooth'});
+document.getElementById('copy').onclick=async()=>{const all=messages.map(([n,t])=>n+': '+t).join('\n\n');try{await navigator.clipboard.writeText(all);const b=document.getElementById('copy');b.textContent='Conversa copiada ✓';setTimeout(()=>b.textContent='Copiar conversa',2200)}catch{alert('Não foi possível copiar automaticamente neste navegador.')}};
+</script></body></html>
